@@ -1,0 +1,68 @@
+.btn-red{
+    color: #ff0D0D;
+}
+
+.btn-red:hover{
+    background-color:#ff0D0D ;
+    box-shadow: 0 0 5px #ff0D0D,
+                    0 0 25px #ff0D0D,
+                    0 0 50px #ff0D0D,
+                    0 0 100px #ff0D0D;
+}
+
+.btn-red span:nth-child(1){
+    background-color: linear-gradient(180deg,transparent,#ff0D0D);
+}
+
+
+
+.btn-red span:nth-child(2){
+    background-color: linear-gradient(270deg,transparent,#ff0D0D);
+}
+
+
+.btn-red span:nth-child(3){
+    background-color: linear-gradient(360deg,transparent,#ff0D0D);
+}
+
+
+.btn-red span:nth-child(4){
+    background-color: linear-gradient(90deg,transparent,#ff0D0D);
+}
+
+
+.btn span:nth-child(1){
+    top: 0%;
+    left: 100%; 
+    width: 100%;
+    height: 2px;
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0%{
+        left: -100%;
+    }  
+    50% , 100%{
+        left: 100%;
+    }
+}
+
+.btn{
+    margin: 0 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn:hover{
+    color: #fff;
+    border-radius: 5px;
+}
